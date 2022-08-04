@@ -1,0 +1,16 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    .game-word{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        div{
+            width: 50px;
+            border-bottom: 2px solid black;
+        }
+    }
+}

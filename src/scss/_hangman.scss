@@ -1,0 +1,70 @@
+.hangman {
+  position: relative;
+  height: 100vh;
+}
+
+.direk {
+  position: absolute;
+  width: 248px;
+  height: 500px;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+  position: absolute;
+  transform: translate(100px, 100px);
+}
+.askı {
+  position: absolute;
+  height: 50px;
+  border-left: 5px solid rgb(0, 0, 0);
+  transform: translate(350px, 100px);
+}
+.baş {
+  &.active {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transform: translate(300px, 150px);
+  }
+}
+.gövde {
+  &.active {
+    position: absolute;
+    height: 150px;
+    border-left: 3px solid black;
+    transform: translate(350px, 250px);
+  }
+}
+.sol-kol {
+  &.active {
+    position: absolute;
+    height: 75px;
+    border-left: 3px solid black;
+    transform: rotate(45deg) translate(440px, -15px);
+  }
+}
+.sağ-kol {
+  &.active {
+    position: absolute;
+    height: 75px;
+    border-left: 3px solid black;
+    transform: rotate(135deg) translate(-55px, -475px);
+  }
+}
+.sol-bacak {
+  &.active {
+    position: absolute;
+    height: 100px;
+    border-left: 3px solid black;
+    transform: rotate(45deg) translate(494px, 52px);
+  }
+}
+.sağ-bacak {
+  &.active {
+    position: absolute;
+    height: 100px;
+    border-left: 3px solid black;
+    transform: rotate(135deg) translate(0px, -547px);
+  }
+}

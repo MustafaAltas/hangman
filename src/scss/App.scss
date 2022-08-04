@@ -1,0 +1,20 @@
+@import "hangman" ; 
+@import "game" ; 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @media screen and( max-width : 800px) {
+        grid-template-columns: 1fr;
+    }
+}
