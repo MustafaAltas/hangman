@@ -4,6 +4,13 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    input[type=text]{
+        width: 300px;
+        height: 30px;
+        @media screen and (max-width:600px) {
+            width: 200px;
+        }
+    }
     .game-word{
         display: flex;
         justify-content: center;
@@ -11,6 +18,57 @@
         div{
             width: 50px;
             border-bottom: 2px solid black;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        @media screen and (max-width:600px) {
+            gap:0.4rem;
+            div{
+                width: 30px;
+            }
+        }
+    }
+    .game-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        button{
+            border: transparent;
+            background: rgb(47, 52, 203);
+            color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            transition: all 0.15s;
+            &:hover{
+                background: rgb(14, 19, 164);
+            }
+            &:active{
+                transform: translateY(2px);
+            }
+        }
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 2rem;
+        padding: 3rem;
+        @media screen and (max-width:600px) {
+            gap: 0.7rem;
+        }
+        
+        button{
+            padding: 0.7rem;
+            border: transparent;
+            background-color: rgb(144, 24, 208);
+            &:hover{
+                background-color: rgb(99, 15, 145);
+                color: white;
+            }
+            &:active{
+                transform: translateY(2px);
+            }
         }
     }
 }
